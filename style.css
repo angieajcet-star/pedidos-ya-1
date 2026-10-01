@@ -1,0 +1,188 @@
+/* --- RESET Y ESTILOS GENERALES --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* --- MOCKUP DE TELÉFONO --- */
+.phone-mockup {
+  width: 360px;
+  height: 720px;
+  background-color: #f7f9fa;
+  border: 12px solid #2d3748;
+  border-radius: 40px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* --- BARRA DE ESTADO --- */
+.status-bar {
+  background-color: #ea1d2c;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 5px 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.status-icons {
+  display: flex;
+  gap: 6px;
+}
+
+.status-icons .icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* --- HEADER Y BANNER --- */
+.header {
+  background-color: #ea1d2c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  position: relative;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.p-icon {
+  background-color: #ffffff;
+  color: #ea1d2c;
+  font-weight: 900;
+  font-size: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-name {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.food-banner {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+}
+
+.food-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 14px;
+}
+
+/* Estilo base para botones */
+.btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  position: relative;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 16px;
+}
+
+/* Botón Google */
+.btn-google {
+  background-color: #ffffff;
+  color: #5f6368;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.btn-google:hover {
+  background-color: #f8f9fa;
+}
+
+/* Botón Facebook */
+.btn-facebook {
+  background-color: #1877f2;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-facebook:hover {
+  background-color: #166fe5;
+}
+
+/* Enlace "Otro método" */
+.other-method {
+  margin-top: 10px;
+  color: #1a73e8;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.other-method:hover {
+  text-decoration: underline;
+}
+
+/* --- FOOTER --- */
+.footer {
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 10px;
+  color: #888888;
+  line-height: 1.4;
+}
+
+.footer a {
+  color: #666666;
+  text-decoration: underline;
+}
